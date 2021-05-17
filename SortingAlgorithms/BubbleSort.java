@@ -20,9 +20,10 @@ public class BubbleSort {
 			//    it is not necessary to include it in the next loop
 			for (int j = 0; j < length - i - 1; j++) {
 				if (array[j] > array[j + 1]) {
-					temp = array[j];
-					array[j] = array[j + 1];
-					array[j + 1] = temp;
+					Utils.swap(array,j,j + 1);
+					// temp = array[j];
+					// array[j] = array[j + 1];
+					// array[j + 1] = temp;
 				}
 			}
 		}
@@ -42,9 +43,10 @@ public class BubbleSort {
 			//    it is not necessary to include it in the next loop
 			for (int j = 0; j < length - i - 1; j++) {
 				if (array[j] > array[j + 1]) {
-					temp = array[j];
-					array[j] = array[j + 1];
-					array[j + 1] = temp;
+					Utils.swap(array,j,j + 1);
+					// temp = array[j];
+					// array[j] = array[j + 1];
+					// array[j + 1] = temp;
 					Flag = true;
 				}
 			}

@@ -19,16 +19,18 @@ public class RandomArrays {
 		for (int i = 0; i < 20; i++) {
 			test[i] = random.nextInt(300);
 		}
+		// test = new int[]{1, 3, 2, 4, 5, 2};
 
 		System.out.println(Arrays.toString(test));
-		ShellSort.Shell_Sort(test);
-		System.out.println(Arrays.toString(test));
-		// test = new int[]{1, 3, 2, 4, 5, 2};
+		// ShellSort.Shell_Sort(test);
+		HeapSort.Heap_Sort(test);
 		// BubbleSort.Bubble_Sort(test);
+		// MergeSort.CallMergeSort2(test);
+		// QuickSort.CallQuickSort(test);
+		System.out.println(Arrays.toString(test));
 
 		// int[] ints = Arrays.copyOf(test, test.length);
 		// CompareMergeQuick(test);
-		// MergeSortTest(ints);
 	}
 
 	public static void CompareMergeQuick(int[] test){

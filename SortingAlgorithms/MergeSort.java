@@ -95,7 +95,7 @@ public class MergeSort {
 		int j = mid + 1;
 		int k = 0;
 		// 3. Comparison until any one of the array is finished
-		while (i < mid && j < right) {
+		while (i < mid + 1 && j < right + 1) {
 			if (array[i] < array[j]) {
 				temp[k++] = array[i++];
 			} else {
@@ -146,19 +146,6 @@ public class MergeSort {
 			newArray[k++] = rightArr[j++];
 		}
 		return newArray;
-	}
-
-	public static boolean test() {
-		int[] testA = {1, 3, 4, 6};
-		int[] testB = {5, 2, 4, 7};
-		for (int i : testA) {
-			for (int j : testB) {
-				if (i == j) {
-					return true;
-				}
-			}
-		}
-		return false;
 	}
 
 }

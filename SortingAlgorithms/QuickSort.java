@@ -37,15 +37,17 @@ public class QuickSort {
 			// 4. if array[j] is smaller or equals to q, we add 1 to i, and swap element in index i and j
 			if (array[j] <= q) {
 				i++;
-				temp = array[i];
-				array[i] = array[j];
-				array[j] = temp;
+				Utils.swap(array, i, j);
+				// temp = array[i];
+				// array[i] = array[j];
+				// array[j] = temp;
 			}
 		}
 		// 5. swap the element in i+1 and q, (i+1) is used since element index smaller or equals to i is smaller to q
-		temp = array[i + 1];
-		array[i + 1] = array[right];
-		array[right] = temp;
+		Utils.swap(array, i + 1, right);
+		// temp = array[i + 1];
+		// array[i + 1] = array[right];
+		// array[right] = temp;
 		return i + 1;
 	}
 }
